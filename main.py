@@ -1,4 +1,5 @@
 class ColorRGB:
+
     def __init__(self, red, green, blue):
         if red < 0 or red > 255:
             raise ValueError("red повинен бути вiд 0 до 255")
