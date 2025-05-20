@@ -13,9 +13,6 @@ class ColorRGB:
     def show(self):
         print(f"колiр: ({self.red}, {self.green}, {self.blue})")
 
-    def to_hex(self):
-        return '#{:02X}{:02X}{:02X}'.format(self.red, self.green, self.blue)
-
     def grayscale(self):
         avg = (self.red + self.green + self.blue) // 3
         return ColorRGB(avg, avg, avg)
@@ -31,9 +28,6 @@ if __name__ == "__main__":
         print(" створюємо основний колiр:")
         color1 = ColorRGB(100, 150, 200)
         color1.show()
-
-        print("\n hex формат:")
-        print(color1.to_hex())
 
         print("\n вiдтiнок сiрого:")
         gray = color1.grayscale()
