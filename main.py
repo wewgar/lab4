@@ -6,6 +6,7 @@ class ColorRGB:
             raise ValueError("green повинен бути вiд 0 до 255")
         if blue < 0 or blue > 255:
             raise ValueError("blue повинен бути вiд 0 до 255")
+
         self.red = red
         self.green = green
         self.blue = blue
